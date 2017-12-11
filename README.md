@@ -1,13 +1,11 @@
 # svelte app
 
-This is a project template for [Svelte](https://svelte.technology) apps. It lives at https://github.com/sveltejs/template-webpack.
+This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template-webpack.
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npm install -g degit # you only need to do this once
-
-degit sveltejs/template-webpack svelte-app
+npx degit sveltejs/template-webpack svelte-app
 cd svelte-app
 ```
 
@@ -23,7 +21,7 @@ cd svelte-app
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
+...then start webpack:
 
 ```bash
 npm run dev
