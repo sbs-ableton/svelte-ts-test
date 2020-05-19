@@ -1,11 +1,12 @@
 <script>
-	export let name;
+    export let count = 0;
+    function handleClick() {
+        count += 1;
+    }
+    console.log('app loaded')
 </script>
 
-<style>
-	h1 {
-		color: purple;
-	}
-</style>
+<button on:click={handleClick}>
+    Clicked {count} {count === 1 ? 'time' : 'times'}
+</button>
 
-<h1>Hello {name}!</h1>

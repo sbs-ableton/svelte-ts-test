@@ -1,12 +1,12 @@
 import App from './App.svelte';
 
-const app = new App({
-	target: document.body,
-	props: {
-		name: 'world'
-	}
-});
+export function createSvelteTemplate(element, ctx) {
+    return new App({
+        target: element,
+        props: ctx
+    });
+}
 
-window.app = app;
-
-export default app;
+window.sqg
+    ? window.sqg["createSvelteTemplate"] = createSvelteTemplate
+    : window.sqg = {"createSvelteTemplate": createSvelteTemplate};

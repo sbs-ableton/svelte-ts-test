@@ -13,5 +13,10 @@
 
 <body>
 	<script src='bundle.js'></script>
+    <script type="text/javascript">
+        console.log('a')
+        window.sqg.createSvelteTemplate(document.body, {count: -2});
+        console.log('b')
+    </script>
 </body>
 </html>
