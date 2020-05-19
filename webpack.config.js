@@ -28,7 +28,22 @@ module.exports = {
 					loader: 'svelte-loader',
 					options: {
 						emitCss: true,
-						hotReload: true
+						hotReload: true,
+						preprocess: require('svelte-preprocess')({
+							typescript: {
+								transpileOnly: false,
+							},
+						}),
+					},
+				},
+			},
+			{
+				test: /\.tsx?$/,
+				use: {
+					loader: 'ts-loader',
+					options: {
+						transpileOnly: false,
+						experimentalWatchApi: true,
 					}
 				}
 			},

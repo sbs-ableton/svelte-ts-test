@@ -1,7 +1,8 @@
-<script>
+<script lang="typescript">
     export let count = 0;
-    function handleClick() {
+    function handleClick(): number {
         count += 1;
+        return count;
     }
     console.log('app loaded')
 </script>
