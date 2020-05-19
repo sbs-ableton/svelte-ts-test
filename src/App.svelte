@@ -1,7 +1,8 @@
 <script lang="typescript">
+    import { increment } from "./helper"
     export let count = 0;
     function handleClick(): number {
-        count += 1;
+        count = increment(count);
         return count;
     }
     console.log('app loaded')

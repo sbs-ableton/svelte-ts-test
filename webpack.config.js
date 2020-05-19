@@ -12,7 +12,7 @@ module.exports = {
 		alias: {
 			svelte: path.resolve('node_modules', 'svelte')
 		},
-		extensions: ['.mjs', '.js', '.svelte'],
+		extensions: ['.mjs', '.js', '.svelte', '.ts'],
 		mainFields: ['svelte', 'browser', 'module', 'main']
 	},
 	output: {
@@ -38,7 +38,7 @@ module.exports = {
 				},
 			},
 			{
-				test: /\.tsx?$/,
+				test: /\.ts$/,
 				use: {
 					loader: 'ts-loader',
 					options: {
